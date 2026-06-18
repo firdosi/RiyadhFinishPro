@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riyadh Finish Pro | مقاول تشطيبات وديكورات في الرياض</title>
+  <meta name="description" content="خدمات جبس بورد، أسمنت بورد، دهانات، بلاط، كاميرات مراقبة، حدادة، وتركيب دكت ومكيفات في الرياض." />
+
+  <style>
+    :root {
+      --navy: #0b2748;
+      --navy-2: #12365f;
+      --gold: #c8962e;
+      --gold-2: #f0c56a;
+      --charcoal: #222426;
+      --dark: #111820;
+      --white: #ffffff;
+      --soft: #f5f7fa;
+      --muted: #6b7280;
+      --line: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 70px rgba(11, 39, 72, 0.18);
+      --radius: 26px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Tahoma, sans-serif;
+      background: var(--soft);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .top-strip {
+      background: var(--charcoal);
+      color: var(--white);
+      font-size: 14px;
+      padding: 10px 0;
+    }
+
+    .top-strip .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .top-strip span {
+      color: var(--gold-2);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(11, 39, 72, 0.08);
+    }
+
+    .nav {
+      height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      direction: ltr;
+    }
+
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background:
+        linear-gradient(135deg, rgba(200, 150, 46, 0.95), rgba(11, 39, 72, 0.95)),
+        radial-gradient(circle at 70% 30%, #ffffff 0 8px, transparent 9px);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 28px rgba(11, 39, 72, 0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-mark:before,
+    .brand-mark:after {
+      content: "";
+      position: absolute;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 2px;
+    }
+
+    .brand-mark:before {
+      width: 7px;
+      height: 30px;
+      left: 15px;
+      bottom: 11px;
+      box-shadow: 10px -9px 0 rgba(255,255,255,0.82), 20px -17px 0 rgba(255,255,255,0.72);
+    }
+
+    .brand-mark:after {
+      width: 34px;
+      height: 4px;
+      right: 8px;
+      bottom: 12px;
+      transform: rotate(-24deg);
+      background: var(--gold-2);
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 21px;
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+
+    .brand-text small {
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .menu a {
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .menu a:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: 0.25s;
+    }
+
+    .menu a:hover:after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 13px 20px;
+      font-weight: 800;
+      transition: 0.25s;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), var(--gold-2));
+      color: var(--navy);
+      box-shadow: 0 12px 32px rgba(200, 150, 46, 0.32);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 45px rgba(200, 150, 46, 0.42);
+    }
+
+    .btn-dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .btn-dark:hover {
+      background: var(--navy-2);
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid rgba(11, 39, 72, 0.14);
+      background: var(--white);
+      color: var(--navy);
+      font-size: 24px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 120px);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(240, 197, 106, 0.24), transparent 26%),
+        linear-gradient(135deg, #ffffff 0%, #f6f8fb 48%, #e9eef5 100%);
+    }
+
+    .hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(11,39,72,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(11,39,72,0.05) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.55), transparent);
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      left: -160px;
+      top: -100px;
+      width: 460px;
+      height: 760px;
+      background: linear-gradient(160deg, var(--navy), var(--navy-2));
+      transform: rotate(24deg);
+      border-right: 12px solid var(--gold);
+      box-shadow: 0 40px 110px rgba(11,39,72,0.25);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 54px;
+      padding: 82px 0;
+    }
+
+    .hero-copy {
+      direction: rtl;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid rgba(200, 150, 46, 0.35);
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--navy);
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow i {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 6px rgba(200, 150, 46, 0.14);
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: 1.05;
+      color: var(--navy);
+      letter-spacing: -1.2px;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: var(--gold);
+      display: inline-block;
+    }
+
+    .hero-copy p {
+      color: #3f4a58;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.9;
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .hero-copy .english {
+      direction: ltr;
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--muted);
+      border-right: 4px solid var(--gold);
+      padding-right: 16px;
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 680px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(11, 39, 72, 0.08);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 30px rgba(11,39,72,0.06);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      direction: ltr;
+    }
+
+    .building-card {
+      position: absolute;
+      inset: 28px 0 0 28px;
+      border-radius: 38px;
+      background:
+        linear-gradient(145deg, rgba(11,39,72,0.92), rgba(18,54,95,0.92)),
+        url("data:image/svg+xml,%3Csvg width='500' height='500' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.08'%3E%3Cpath d='M30 420L470 420M80 100v320M160 60v360M260 130v290M360 90v330M50 200h380M100 300h340'/%3E%3C/g%3E%3C/svg%3E");
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .building-card:before {
+      content: "";
+      position: absolute;
+      right: -110px;
+      top: -90px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(200, 150, 46, 0.22);
+    }
+
+    .building-card:after {
+      content: "";
+      position: absolute;
+      left: -80px;
+      bottom: -80px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .mock-room {
+      position: absolute;
+      left: 44px;
+      right: 44px;
+      top: 48px;
+      bottom: 120px;
+      border-radius: 30px;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(246,248,251,0.95));
+      overflow: hidden;
+      box-shadow: 0 26px 60px rgba(0, 0, 0, 0.22);
+    }
+
+    .mock-room .ceiling {
+      height: 38%;
+      background:
+        linear-gradient(135deg, #ffffff, #e9eef5);
+      clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%);
+      border-bottom: 5px solid var(--gold);
+      position: relative;
+    }
+
+    .mock-room .ceiling:before {
+      content: "";
+      position: absolute;
+      inset: 34px 70px;
+      border: 4px solid var(--navy);
+      border-radius: 4px;
+      box-shadow: inset 0 0 0 8px rgba(200,150,46,0.18);
+    }
+
+    .mock-room .walls {
+      position: absolute;
+      inset: 34% 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      padding: 28px;
+    }
+
+    .wall-panel {
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(11,39,72,0.12), rgba(11,39,72,0.03)),
+        repeating-linear-gradient(90deg, transparent 0 18px, rgba(11,39,72,0.07) 19px 20px);
+      border: 1px solid rgba(11,39,72,0.12);
+    }
+
+    .service-chip-wrap {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 26px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .service-chip {
+      color: var(--white);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 16px;
+      padding: 12px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      backdrop-filter: blur(12px);
+    }
+
+    .floating-call {
+      position: absolute;
+      right: -8px;
+      bottom: 22px;
+      z-index: 4;
+      background: var(--charcoal);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 26px;
+      padding: 18px 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.22);
+      direction: ltr;
+    }
+
+    .floating-call small {
+      color: var(--gold-2);
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+
+    .floating-call strong {
+      display: block;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 26px;
+      margin-bottom: 42px;
+    }
+
+    .section-kicker {
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.18;
+      letter-spacing: -0.6px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 520px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(220px, 1fr));
+      gap: 18px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .service-card {
+      min-height: 300px;
+      background: var(--white);
+      border: 1px solid rgba(11, 39, 72, 0.08);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 18px 55px rgba(11, 39, 72, 0.08);
+      transition: 0.25s;
+      position: relative;
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+
+    .service-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(145deg, rgba(11,39,72,0.96), rgba(18,54,95,0.96));
+      opacity: 0;
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 26px 70px rgba(11, 39, 72, 0.16);
+    }
+
+    .service-card:hover:before {
+      opacity: 1;
+    }
+
+    .service-card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      background: rgba(200, 150, 46, 0.14);
+      color: var(--gold);
+      margin-bottom: 22px;
+      font-size: 28px;
+      transition: 0.25s;
+    }
+
+    .service-card:hover .icon {
+      background: rgba(255,255,255,0.12);
+      color: var(--gold-2);
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .service-card .en {
+      direction: ltr;
+      color: var(--gold);
+      font-weight: 800;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .service-card:hover h3,
+    .service-card:hover p {
+      color: var(--white);
+    }
+
+    .process {
+      background: var(--navy);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process:before {
+      content: "";
+      position: absolute;
+      width: 620px;
+      height: 620px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(200,150,46,0.23), transparent 62%);
+      left: -180px;
+      top: -220px;
+    }
+
+    .process .section-kicker,
+    .process h2 {
+      color: var(--white);
+    }
+
+    .process .section-head p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .step {
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+    }
+
+    .step strong {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: var(--navy);
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .step h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .step p {
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      grid-auto-rows: 210px;
+      gap: 18px;
+    }
+
+    .project {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      background:
+        linear-gradient(135deg, rgba(11,39,72,0.88), rgba(200,150,46,0.45)),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 14px);
+      box-shadow: 0 20px 60px rgba(11,39,72,0.12);
+    }
+
+    .project:nth-child(1) {
+      grid-row: span 2;
+    }
+
+    .project:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .project:before {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 20px;
+    }
+
+    .project-content {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 28px;
+      color: var(--white);
+      background: linear-gradient(to top, rgba(0,0,0,0.62), transparent);
+    }
+
+    .project-content small {
+      color: var(--gold-2);
+      font-weight: 900;
+    }
+
+    .project-content h3 {
+      font-size: 24px;
+      margin-top: 8px;
+    }
+
+    .areas {
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,255,255,0.74)),
+        radial-gradient(circle at 85% 10%, rgba(200,150,46,0.16), transparent 30%);
+    }
+
+    .area-wrap {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .map-card {
+      border-radius: var(--radius);
+      background: var(--navy);
+      color: var(--white);
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+      min-height: 380px;
+      box-shadow: var(--shadow);
+    }
+
+    .map-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 38px 38px;
+      transform: rotate(-6deg) scale(1.2);
+    }
+
+    .pin {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--gold);
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      box-shadow: 0 0 0 10px rgba(200,150,46,0.16);
+    }
+
+    .pin:nth-child(1) { left: 28%; top: 28%; }
+    .pin:nth-child(2) { left: 58%; top: 34%; }
+    .pin:nth-child(3) { left: 42%; top: 58%; }
+    .pin:nth-child(4) { left: 70%; top: 66%; }
+
+    .map-card h3,
+    .map-card p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .map-card h3 {
+      font-size: 34px;
+      margin-bottom: 14px;
+    }
+
+    .map-card p {
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+    }
+
+    .area-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .area-item {
+      background: var(--white);
+      padding: 24px;
+      border-radius: 22px;
+      border: 1px solid rgba(11,39,72,0.08);
+      box-shadow: 0 14px 35px rgba(11,39,72,0.06);
+    }
+
+    .area-item h3 {
+      color: var(--navy);
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+
+    .area-item p {
+      color: var(--muted);
+      direction: ltr;
+      text-align: right;
+    }
+
+    .contact {
+      background: var(--dark);
+      color: var(--white);
+      padding-bottom: 46px;
+    }
+
+    .contact .section-kicker,
+    .contact h2 {
+      color: var(--white);
+    }
+
+    .contact .section-head p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+    }
+
+    .contact-card,
+    .form-card {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--line);
+      padding: 30px;
+      backdrop-filter: blur(12px);
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-line:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-line b {
+      color: var(--gold-2);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-line span {
+      color: rgba(255,255,255,0.74);
+      direction: ltr;
+      display: block;
+      text-align: right;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+      outline: none;
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255,255,255,0.5);
+    }
+
+    option {
+      color: var(--charcoal);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      margin-top: 56px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.62);
+      direction: ltr;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      left: 22px;
+      bottom: 22px;
+      z-index: 60;
+      background: #25d366;
+      color: white;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      box-shadow: 0 18px 45px rgba(37, 211, 102, 0.35);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .menu {
+        position: fixed;
+        right: 16px;
+        left: 16px;
+        top: 92px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: var(--white);
+        border: 1px solid rgba(11,39,72,0.1);
+        border-radius: 22px;
+        padding: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu a {
+        display: block;
+        padding: 14px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-inner,
+      .area-wrap,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero:after {
+        opacity: 0.18;
+      }
+
+      .hero-visual {
+        min-height: 480px;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .project:nth-child(1),
+      .project:nth-child(4) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .top-strip {
+        display: none;
+      }
+
+      .nav {
+        height: 72px;
+      }
+
+      .brand-text strong {
+        font-size: 18px;
+      }
+
+      .hero-inner {
+        padding: 52px 0;
+      }
+
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .building-card {
+        inset: 0;
+      }
+
+      .mock-room {
+        left: 20px;
+        right: 20px;
+        top: 28px;
+        bottom: 112px;
+      }
+
+      .floating-call {
+        right: 16px;
+        left: 16px;
+        bottom: 12px;
+      }
+
+      .stats,
+      .steps,
+      .gallery-grid,
+      .area-list {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 12px;
+      }
+
+      section {
+        padding: 68px 0;
+      }
+
+      .service-chip-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-strip">
+    <div class="container">
+      <p>خدمات التشطيبات والديكور في الرياض</p>
+      <p><span>اتصل الآن:</span> 0572632369 | 0595933647</p>
+    </div>
+  </div>
+
+  <header>
+    <nav class="container nav">
+      <a href="#home" class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <strong>RIYADH FINISH PRO</strong>
+          <small>تشطيبات وديكورات</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#projects">الأعمال</a></li>
+        <li><a href="#areas">المناطق</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="tel:0572632369">اتصل الآن</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><i></i> مقاول تشطيبات وديكورات في الرياض</div>
+          <h1>تشطيب احترافي <span>للمنازل والمحلات</span> داخل الرياض</h1>
+          <p>
+            نقدم خدمات جبس بورد، أسمنت بورد، دهانات، بلاط، حدادة، كاميرات مراقبة،
+            وتركيب دكت ومكيفات للمشاريع السكنية والتجارية.
+          </p>
+          <p class="english">
+            Professional fit-out, renovation, AC, CCTV, gypsum, painting, tile and finishing services in Riyadh.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="https://wa.me/966595933647?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%85%D9%86%20Riyadh%20Finish%20Pro" target="_blank" rel="noopener">واتساب الآن</a>
+            <a class="btn btn-dark" href="#services">شاهد الخدمات</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>07</strong>
+              <span>خدمات رئيسية للتشطيب والتركيب</span>
+            </div>
+            <div class="stat">
+              <strong>04+</strong>
+              <span>مناطق مستهدفة داخل الرياض</span>
+            </div>
+            <div class="stat">
+              <strong>2</strong>
+              <span>أرقام للتواصل السريع والواتساب</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="building-card">
+            <div class="mock-room">
+              <div class="ceiling"></div>
+              <div class="walls">
+                <div class="wall-panel"></div>
+                <div class="wall-panel"></div>
+                <div class="wall-panel"></div>
+              </div>
+            </div>
+
+            <div class="service-chip-wrap">
+              <div class="service-chip">جبس بورد</div>
+              <div class="service-chip">أسمنت بورد</div>
+              <div class="service-chip">تركيب دكت ومكيفات</div>
+              <div class="service-chip">دهانات وبلاط</div>
+            </div>
+          </div>
+
+          <div class="floating-call">
+            <small>Call / WhatsApp</small>
+            <strong>0572632369</strong>
+            <strong>0595933647</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">خدماتنا</div>
+            <h2>كل ما تحتاجه لتشطيب وتجهيز مشروعك</h2>
+          </div>
+          <p>
+            خدمات تشطيب وتركيب مناسبة للمنازل، المحلات، المكاتب، والمشاريع التجارية داخل الرياض.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="icon">▣</div>
+            <h3>جبس بورد</h3>
+            <div class="en">Gypsum Board</div>
+            <p>تصميم وتركيب جبس بورد عصري للأسقف والجدران والديكورات الداخلية.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">▤</div>
+            <h3>أسمنت بورد</h3>
+            <div class="en">Cement Board</div>
+            <p>أعمال الأسمنت بورد وتكسية الجدران للمشاريع الداخلية والخارجية.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">⌁</div>
+            <h3>حدادة</h3>
+            <div class="en">Welding</div>
+            <p>خدمات الحدادة وتفصيل الهياكل المعدنية والدعامات حسب الحاجة.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">▦</div>
+            <h3>تركيب بلاط</h3>
+            <div class="en">Tile Installation</div>
+            <p>تركيب سيراميك وبورسلان للأرضيات والجدران مع تشطيب نظيف.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">◉</div>
+            <h3>تركيب كاميرات</h3>
+            <div class="en">CCTV Installation</div>
+            <p>حلول كاميرات مراقبة للمنازل والمحلات والمباني التجارية.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">◧</div>
+            <h3>دهانات داخلي</h3>
+            <div class="en">Interior Painting</div>
+            <p>دهانات داخلية وديكورات جدارية للمساحات السكنية والتجارية.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">≋</div>
+            <h3>دكت ومكيفات</h3>
+            <div class="en">AC & Duct</div>
+            <p>تركيب وصيانة أنظمة التكييف والدكت للمنازل والمشاريع.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">طريقة العمل</div>
+            <h2>خطوات بسيطة من أول تواصل إلى التسليم</h2>
+          </div>
+          <p>
+            نركز على فهم المطلوب، زيارة الموقع عند الحاجة، ثم تنفيذ العمل بشكل منظم وواضح.
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <strong>1</strong>
+            <h3>تواصل سريع</h3>
+            <p>ارسل تفاصيل المشروع أو صورة الموقع عبر الواتساب.</p>
+          </div>
+          <div class="step reveal">
+            <strong>2</strong>
+            <h3>تحديد المطلوب</h3>
+            <p>نراجع الخدمة المطلوبة، الموقع، والمساحة التقريبية.</p>
+          </div>
+          <div class="step reveal">
+            <strong>3</strong>
+            <h3>تنفيذ منظم</h3>
+            <p>يتم ترتيب العمل حسب نوع الخدمة والجدول المتفق عليه.</p>
+          </div>
+          <div class="step reveal">
+            <strong>4</strong>
+            <h3>تشطيب وتسليم</h3>
+            <p>مراجعة العمل النهائي والتأكد من نظافة التشطيب.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">معرض الأعمال</div>
+            <h2>نماذج يمكن استبدالها بصور المشاريع الحقيقية</h2>
+          </div>
+          <p>
+            ضع هنا أفضل صور التشطيب النهائية أولاً، ثم صور مراحل التنفيذ بعد ذلك.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="project reveal">
+            <div class="project-content">
+              <small>Gypsum Board</small>
+              <h3>أسقف وجدران جبس بورد</h3>
+            </div>
+          </div>
+          <div class="project reveal">
+            <div class="project-content">
+              <small>Commercial Fit-out</small>
+              <h3>تشطيب محلات</h3>
+            </div>
+          </div>
+          <div class="project reveal">
+            <div class="project-content">
+              <small>AC & Duct</small>
+              <h3>تركيب دكت ومكيفات</h3>
+            </div>
+          </div>
+          <div class="project reveal">
+            <div class="project-content">
+              <small>Cement Board</small>
+              <h3>أسمنت بورد وتكسية جدران</h3>
+            </div>
+          </div>
+          <div class="project reveal">
+            <div class="project-content">
+              <small>CCTV & Electrical</small>
+              <h3>كاميرات وتجهيزات</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">مناطق الخدمة</div>
+            <h2>نخدم الرياض والمناطق القريبة</h2>
+          </div>
+          <p>
+            يمكن إضافة مناطق أكثر لاحقاً حسب نطاق عمل الفريق داخل الرياض.
+          </p>
+        </div>
+
+        <div class="area-wrap">
+          <div class="map-card reveal">
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <div class="pin"></div>
+            <h3>Riyadh</h3>
+            <p>خدمة داخل مدينة الرياض مع تركيز على الأحياء المحددة في صفحة النشاط.</p>
+          </div>
+
+          <div class="area-list">
+            <div class="area-item reveal">
+              <h3>حي الياسمين</h3>
+              <p>Al Yasmin, Riyadh</p>
+            </div>
+            <div class="area-item reveal">
+              <h3>حي النرجس</h3>
+              <p>Al Narjis, Riyadh</p>
+            </div>
+            <div class="area-item reveal">
+              <h3>حي السويدي</h3>
+              <p>Al Suwaidi, Riyadh</p>
+            </div>
+            <div class="area-item reveal">
+              <h3>حي الربوة</h3>
+              <p>Al Rabwah, Riyadh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-kicker">تواصل معنا</div>
+            <h2>اطلب معاينة أو عرض سعر للمشروع</h2>
+          </div>
+          <p>
+            اكتب نوع الخدمة والمنطقة، وسيتم تجهيز رسالة واتساب مباشرة.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-line">
+              <div>☎</div>
+              <div>
+                <b>اتصال مباشر</b>
+                <span>0572632369</span>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div>✆</div>
+              <div>
+                <b>واتساب</b>
+                <span>0595933647</span>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div>⌂</div>
+              <div>
+                <b>المدينة</b>
+                <span>Riyadh, Saudi Arabia</span>
+              </div>
+            </div>
+            <div class="contact-line">
+              <div>◷</div>
+              <div>
+                <b>ساعات مقترحة</b>
+                <span>Sat to Thu: 8 AM to 10 PM</span>
+                <span>Friday: 2 PM to 10 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card reveal">
+            <form id="quoteForm">
+              <input type="text" id="name" placeholder="الاسم" required />
+              <input type="tel" id="phone" placeholder="رقم الجوال" required />
+              <select id="service" required>
+                <option value="">اختر الخدمة</option>
+                <option>جبس بورد</option>
+                <option>أسمنت بورد</option>
+                <option>حدادة</option>
+                <option>تركيب بلاط</option>
+                <option>تركيب كاميرات</option>
+                <option>دهانات داخلي</option>
+                <option>تركيب دكت ومكيفات</option>
+              </select>
+              <input type="text" id="area" placeholder="الحي أو المنطقة" />
+              <textarea id="message" placeholder="اكتب تفاصيل المشروع"></textarea>
+              <button class="btn btn-primary" type="submit">إرسال عبر واتساب</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>© <span id="year"></span> Riyadh Finish Pro. All rights reserved.</p>
+          <p>riyadhfinishpro.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/966595933647?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%85%D9%86%20Riyadh%20Finish%20Pro" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".menu a").forEach((link) => {
+      link.addEventListener("click", () => menu.classList.remove("show"));
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const quoteForm = document.getElementById("quoteForm");
+
+    quoteForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const area = document.getElementById("area").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const text = `السلام عليكم، أريد عرض سعر من Riyadh Finish Pro.%0A%0Aالاسم: ${encodeURIComponent(name)}%0Aرقم الجوال: ${encodeURIComponent(phone)}%0Aالخدمة: ${encodeURIComponent(service)}%0Aالمنطقة: ${encodeURIComponent(area || "غير محدد")}%0Aالتفاصيل: ${encodeURIComponent(message || "غير محدد")}`;
+
+      window.open(`https://wa.me/966595933647?text=${text}`, "_blank");
+    });
+  </script>
+</body>
+</html>
